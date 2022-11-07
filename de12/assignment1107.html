@@ -11,24 +11,55 @@
     <h1>pythonの課題（可能性の模索）</h1>
     <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
     <div>
-         <!-- ①↓に文字を書いてみよう -->
+         <!-- ①↓に文字を書いてみよう -->        
         <div>
-            
-        </div>        
-        <div>
-            
+            グループでやることは、株について、自身が調べたい株価の種類を決められた数字を入力することで、そのサイトに飛べる仕組みを考えた。
         </div>
         <div>
-            
+            以下がそのコードである。
         </div>
         <div>
-                    
+            <code>
+                <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+                <li style="background-color:#EFF;">from symbol import namedexpr_test</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">name = int(input(<font style="color:brown;">'閲覧する株価の種類の数字を選んでください。1,金融機関 2,マスメディア 3,通信サービス　4,システム・ソフトウェア 5,小売り'</font>))</li>
+                <li style="background-color:#EEF;">a = [<font style="color:brown;">"stock.py"</font>, <font style="color:brown;">"systemsoftware.py"</font>, <font style="color:brown;">"retail.py"</font>, <font style="color:brown;">"finamce.py"</font>, <font style="color:brown;">"massmedia.py"</font>]</li>
+                <li style="background-color:#EFF;">if name == 1:</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print(a[0])</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print(a[1])</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print(a[2])</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print(a[3])</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print(a[4])</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">import webbrowser</li>
+                <li style="background-color:#EEF;">webbrowser.open(<font style="color:brown;">'https://www.nikkei.com/nkd/industry/stocklist/?n_m_code=121'</font>)  #金融機関</li>
+                <li style="background-color:#EFF;"></li>
+                <li style="background-color:#EEF;">import webbrowser</li>
+                <li style="background-color:#EFF;">webbrowser.open(<font style="color:brown;">'https://www.nikkei.com/nkd/industry/stocklist/?n_m_code=141'</font>)  #マスメディア</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">import webbrowser</li>
+                <li style="background-color:#EEF;">webbrowser.open(<font style="color:brown;">'https://www.nikkei.com/nkd/industry/stocklist/?n_m_code=101'</font>)  #小売り</li>
+                <li style="background-color:#EFF;"></li>
+                <li style="background-color:#EEF;">import webbrowser</li>
+                <li style="background-color:#EFF;">webbrowser.open(<font style="color:brown;">'https://www.nikkei.com/nkd/industry/stocklist/?n_m_code=146'</font>)  #システム・ソフトウェア</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">import webbrowser</li>
+                <li style="background-color:#EEF;">webbrowser.open(<font style="color:brown;">'https://www.nikkei.com/nkd/industry/stocklist/?n_m_code=142'</font>)  #通信サービス</li>
+                </ol></code>
         </div> 
         <div>
-            
+            私たちの班では、前回の3択クイズで利用した仕組み（数字を入力すると指定のものが開かれるもの）を使うことにした。
         </div>
         <div>
-            
+            実際、友達に協力してもらったが、最後まで完成させることができなかった。<br>
+            できなかったことは、<br>
+            <ul>
+                <li>数字を入力しても5つすべてのウィンドウが開いてしまう点</li>
+                <li>数字を入力しても指定のウィンドウが開かず、いつも同じウィンドウが開いてしまう点</li><br>
+                です。
+            </ul>
         </div>
     </div>
 
